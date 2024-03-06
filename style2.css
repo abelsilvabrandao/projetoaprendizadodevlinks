@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+/*profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 200px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+/* switch */
+#switch {
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* Estilo para o formulário */
+
+#contact-form {
+  margin-top: 8px;
+}
+
+#contact-form label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300; /* Ajusta a espessura da fonte dos labels */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="tel"],
+#contact-form input[type="email"] {
+  font-weight: bold;
+  font-size: 1em; /* Ajuste o valor conforme necessário */
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 3px solid var(--stroke-color);
+  border-radius: 8px;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+#contact-form h1 {
+  text-align: center;
+  font-size: 20px; /* Diminui o tamanho do título do formulário */
+  margin-top: 25px;
+  margin-bottom: 30px; /* Adiciona espaço abaixo do título */
+}
+
+#contact-form textarea {
+  font-weight: bold;
+  font-size: 1em; /* Ajuste o valor conforme necessário */
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 3px solid var(--stroke-color);
+  border-radius: 8px;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+  resize: vertical;
+}
+
+#contact-form button {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-top: 16px; /* Adiciona uma margem superior ao botão */
+  padding: 10px;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adiciona um pouco de espaço abaixo do botão */
+#contact-form button {
+  margin-bottom: 5px;
+}
+
+#contact-form button:hover {
+  background-color: var(--surface-color);
+}
+/* Cor do texto digitado no imput */
+input,
+textarea {
+  color: black;
+  
+}
+/* Fim do estilo para o formulário */
+/*pagina em manutenção*/
+#statussite {
+  text-align: center;
+  padding: 24px;
+}
+
+#statussite img {
+  width: 200px;
+}
+
+
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}

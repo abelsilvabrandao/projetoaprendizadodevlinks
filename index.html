@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Memeu Ramos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/avatar-memeu.png" alt="Foto do usuario"/>
+        <p>@memeuramos_</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="formulario.html" target="_blank">Contrate para seu Evento</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/memeuramos?sub_confirmation=1" target="_blank">Se inscreva no meu Canal</a>
+        </li>
+        <li>
+          <a href="agenda.html">Agenda de Shows</a>
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://wa.me/5571992170673/?text=Oi, tudo bem? Estou entrando em contato para solicitar cotação.%0A%0A*Segue dados*%0A%0AContato para evento%0AEndereço do Evento:%0ALocal do evento possui equipamento de som: (   ) Sim  (  ) Não" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+
+        <a href="https://www.instagram.com/memeuramos_/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://www.youtube.com/memeuramos" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://pt-br.facebook.com/memeu.ramos/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </div>
+    </div>
+      <div id="logo-marca">
+        <img src="./assets/logo MEMEU ouro.png" alt="logo marca do usuário" />
+        <p><span id="ano-atual">anoAtual</span> © Memeu Ramos</p>
+      </div>
+    </div>
+    <footer>
+      Feito com <ion-icon name="heart-outline"></ion-icon> por
+      <a href="https://www.instagram.com/abelsilvabrandao/" target="_blank">
+        Abel Silva Brandão</a>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+<script>
+    // Obter o elemento <span> pelo ID
+    var spanAno = document.getElementById('ano-atual');
+
+    // Obter o ano atual
+    var anoAtual = new Date().getFullYear();
+
+    // Atualizar o conteúdo do <span> com o ano atual
+    spanAno.textContent = anoAtual;
+</script>
+  </body>
+</html>
